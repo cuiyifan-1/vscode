@@ -12,7 +12,7 @@
 		"prepare": "husky install",
 		"build:test": "vue-tsc && vite build --mode test",
 		"build:pro": "vue-tsc && vite build --mode production",
-    "commit": "git-cz",
+		"commit": "git-cz",
 		"format": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" ",
 		"preinstall": "node ./scripts/preinstall.js"
 	},
@@ -49,8 +49,8 @@
 	},
 	"config": {
 		"commitizen": {
-      "path":"node_modules/cz-git",
-      "useEmoji": true
+			"path": "node_modules/cz-git",
+			"useEmoji": true
 		}
 	}
 }
