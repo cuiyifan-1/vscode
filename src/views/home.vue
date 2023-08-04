@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		大家好~~~~我来啦~~~
+		大家好~~~~我来啦~~~csdcsd
 
 		<div class="user-info">用户信息啊</div>
 		<el-button>Hi~</el-button>

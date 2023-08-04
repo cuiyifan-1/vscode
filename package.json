@@ -12,7 +12,7 @@
 		"prepare": "husky install",
 		"build:test": "vue-tsc && vite build --mode test",
 		"build:pro": "vue-tsc && vite build --mode production",
-		"commit": "git add . && cz-customizable",
+    "commit": "git-cz",
 		"format": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" ",
 		"preinstall": "node ./scripts/preinstall.js"
 	},
@@ -35,6 +35,7 @@
 		"commitlint-config-cz": "^0.13.3",
 		"cz-conventional-changelog": "^3.3.0",
 		"cz-customizable": "^7.0.0",
+		"cz-git": "^1.7.0",
 		"eslint-config-prettier": "^8.10.0",
 		"eslint-config-standard": "^17.1.0",
 		"eslint-plugin-import": "^2.25.2",
@@ -48,7 +49,8 @@
 	},
 	"config": {
 		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
+      "path":"node_modules/cz-git",
+      "useEmoji": true
 		}
 	}
 }
