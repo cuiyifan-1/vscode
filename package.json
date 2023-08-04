@@ -6,14 +6,13 @@
 		"serve": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"lint": "eslint src",
-		"fix": "eslint src --fix",
 		"commitlint": "commitlint --config commitlint.config.cjs -e -V",
 		"prepare": "husky install",
 		"build:test": "vue-tsc && vite build --mode test",
 		"build:pro": "vue-tsc && vite build --mode production",
 		"commit": "git-cz",
-		"format": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" ",
+    "lint:eslint": "eslint --fix --ext .js,.ts,.vue ./src",
+		"lint:prettier": "prettier --write \"./**/*.{html,vue,js,ts,json,md}\" ",
 		"preinstall": "node ./scripts/preinstall.js"
 	},
 	"dependencies": {
